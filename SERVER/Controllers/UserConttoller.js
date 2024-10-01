@@ -1,6 +1,8 @@
 
 const User = require('../models')
 const {verifyPassword} = require('../helpers/bcrypt')
+const {createToken} = require('../helpers/jwt')
+
 
 class UserController {
         static async register(req,res,next){
@@ -57,10 +59,7 @@ class UserController {
                 
                 
             } catch (error) {
-                res.status(500).json({
-                    message: 'Internal Server Error',
-                    error
-                })
+                next(error)
             }
         }
 }
