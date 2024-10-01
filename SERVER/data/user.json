@@ -1,0 +1,18 @@
+[
+    {
+      "username": "cashier1",
+      "email": "cashier1@example.com",
+      "password": "cashierpass123"
+    },
+    {
+      "username": "cashier2",
+      "email": "cashier2@example.com",
+      "password": "cashierpass456"
+    },
+    {
+      "username": "cashier3",
+      "email": "cashier3@example.com",
+      "password": "cashierpass789"
+    }
+  ]
+  

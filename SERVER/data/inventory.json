@@ -1,0 +1,83 @@
+[
+    {
+      "title": "Seiko Presage",
+      "price": 5000000,
+      "description": "Elegant Seiko Presage watch with automatic movement.",
+      "category": "Watches",
+      "image": "https://example.com/images/seiko_presage.jpg",
+      "rating": 5
+    },
+    {
+      "title": "Casio G-Shock",
+      "price": 2000000,
+      "description": "Durable Casio G-Shock watch with shock resistance.",
+      "category": "Watches",
+      "image": "https://example.com/images/casio_gshock.jpg",
+      "rating": 4
+    },
+    {
+      "title": "Citizen Eco-Drive",
+      "price": 3000000,
+      "description": "Citizen Eco-Drive watch powered by light.",
+      "category": "Watches",
+      "image": "https://example.com/images/citizen_ecodrive.jpg",
+      "rating": 5
+    },
+    {
+      "title": "Orient Bambino",
+      "price": 2500000,
+      "description": "Classic Orient Bambino watch with leather strap.",
+      "category": "Watches",
+      "image": "https://example.com/images/orient_bambino.jpg",
+      "rating": 4
+    },
+    {
+      "title": "Tissot Le Locle",
+      "price": 7000000,
+      "description": "Sophisticated Tissot Le Locle watch with Swiss automatic movement.",
+      "category": "Watches",
+      "image": "https://example.com/images/tissot_lelocle.jpg",
+      "rating": 5
+    },
+    {
+      "title": "Tag Heuer Carrera",
+      "price": 15000000,
+      "description": "Luxury Tag Heuer Carrera watch with chronograph function.",
+      "category": "Watches",
+      "image": "https://example.com/images/tag_heuer_carrera.jpg",
+      "rating": 5
+    },
+    {
+      "title": "Rolex Submariner",
+      "price": 80000000,
+      "description": "Iconic Rolex Submariner watch with oystersteel case.",
+      "category": "Watches",
+      "image": "https://example.com/images/rolex_submariner.jpg",
+      "rating": 5
+    },
+    {
+      "title": "Omega Seamaster",
+      "price": 60000000,
+      "description": "Professional Omega Seamaster watch with co-axial escapement.",
+      "category": "Watches",
+      "image": "https://example.com/images/omega_seamaster.jpg",
+      "rating": 5
+    },
+    {
+      "title": "Breitling Navitimer",
+      "price": 75000000,
+      "description": "Aviation-inspired Breitling Navitimer watch with slide rule bezel.",
+      "category": "Watches",
+      "image": "https://example.com/images/breitling_navitimer.jpg",
+      "rating": 5
+    },
+    {
+      "title": "Patek Philippe Nautilus",
+      "price": 300000000,
+      "description": "Exclusive Patek Philippe Nautilus watch with stainless steel case.",
+      "category": "Watches",
+      "image": "https://example.com/images/patek_philippe_nautilus.jpg",
+      "rating": 5
+    }
+  ]
+  
