@@ -13,19 +13,63 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       Cart.belongsTo(models.User, {
         foreignKey: 'user_id',
-        as: 'user'
+        as: 'user_id'
       })
       Cart.belongsTo(models.Inventory, {
         foreignKey: 'product_id',
-        as: 'product'
+        as: 'product_id'
       })
     }
   }
   Cart.init({
-    user_id: DataTypes.INTEGER,
-    product_id: DataTypes.INTEGER,
-    quantity: DataTypes.INTEGER,
-    total_price: DataTypes.INTEGER
+    user_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        notEmpty: {
+          msg: 'User is required'
+        },
+        notNull: {
+          msg: 'User is required'
+        }
+      }
+    },
+    product_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        notEmpty: {
+          msg: 'Product is required'
+        },
+        notNull: {
+          msg: 'Product is required'
+        }
+      }
+    },
+    quantity: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        notEmpty: {
+          msg: 'Quantity is required'
+        },
+        notNull: {
+          msg: 'Quantity is required'
+        }
+      }
+    },
+    total_price: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        notEmpty: {
+          msg: 'Total price is required'
+        },
+        notNull: {
+          msg: 'Total price is required'
+        }
+      }
+    }
   }, {
     sequelize,
     modelName: 'Cart',
