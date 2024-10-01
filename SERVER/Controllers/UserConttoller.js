@@ -1,5 +1,5 @@
 
-const user = require('../models/user')
+const User = require('../models')
 const {verifyPassword} = require('../helpers/bcrypt')
 
 class UserController {
@@ -21,24 +21,41 @@ class UserController {
         }
         static async login(req,res,next){
             try {
-                const {username,password} = req.body
-                const user = await User.findOne({where : {username : username}})
-                if(!user){
+                const {email,password} = req.body
+                 
+                if(!email){
                     res.status(404).json({
-                        message: 'User not found'
+                        message: 'Email not found'
                     })
                 }
-                const isValid = bycrypt.compareSync(password,user.password)
-                if(!isValid){
-                    res.status(401).json({
-                        message: 'Invalid password'
+                if (!password){
+                    res.status(404).json({
+                        message: 'Password not found'
+                    })
+                    
+                }
+                const user = await User.findOne({where : {email : email}})
+                if (!user){
+                    res.status(404).json({
+                        message: 'Email not found'
+                    })               
+                    
+                }
+                const validPassword = verifyPassword(password,user.password)
+                if (!validPassword){
+                    res.status(404).json({
+                        message: 'Password not found'
                     })
                 }
-                const token = jwt.sign({id : user.id},process.env.JWT_SECRET)
-                res.status(200).json({
-                    message: 'Login Success',
-                    token
-                })
+                const payload = {
+                    id: user.id,
+                    email: user.email
+                }
+                const access_token = createToken(payload)
+                res.json({ access_token   })
+
+                
+                
             } catch (error) {
                 res.status(500).json({
                     message: 'Internal Server Error',
