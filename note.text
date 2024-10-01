@@ -1,0 +1,13 @@
+Penjelasan:
+
+One-to-Many:
+
+- Sebuah role dapat ditetapkan ke banyak user (ditunjukkan dengan panah dari peran ke pengguna).
+- Seorang user dapat melakukan banyak transaksi (ditunjukkan dengan tanda panah dari pengguna ke transaksi).
+- Sebuah buku dapat terlibat dalam banyak transaksi (ditunjukkan dengan tanda panah dari buku ke transaksi).
+
+One-to-One:
+
+Setiap transaksi diidentifikasi secara unik berdasarkan idnya dan menghubungkan user tertentu ke buku tertentu.
+
+npx sequilize
