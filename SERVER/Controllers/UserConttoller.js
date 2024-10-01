@@ -1,5 +1,6 @@
 
 const user = require('../models/user')
+const {verifyPassword} = require('../helpers/bcrypt')
 
 class UserController {
         static async register(req,res,next){
