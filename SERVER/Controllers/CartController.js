@@ -24,6 +24,20 @@ class CartController{
             res.status(400).json({ error: error.message });
         }
     }
+    static async updateCartItem(req, res, next) {
+        try {
+            const cartItemId = req.params.id;
+            const { quantity, total_price } = req.body;
+            const updatedCartItem = await Cart.update(
+                { quantity, total_price },
+                { where: { id: cartItemId }, returning: true }
+            );
+            res.status(200).json(updatedCartItem[1][0]);
+        } catch (error) {
+            console.error(error);
+            res.status(400).json({ error: error.message });
+        }
+    }
     
 }
 

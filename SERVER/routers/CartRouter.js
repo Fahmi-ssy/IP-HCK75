@@ -8,5 +8,7 @@ CartRouter.use(authorization);
 
 CartRouter.post("/", CartController.createCartItem);
 CartRouter.get("/:userId", CartController.getCartItems);
+CartRouter.put("/:id", CartController.updateCartItem);
+
 
 module.exports = CartRouter;
