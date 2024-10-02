@@ -1,18 +1,152 @@
 [
-    {
-      "username": "cashier1",
-      "email": "cashier1@example.com",
-      "password": "cashierpass123"
-    },
-    {
-      "username": "cashier2",
-      "email": "cashier2@example.com",
-      "password": "cashierpass456"
-    },
-    {
-      "username": "cashier3",
-      "email": "cashier3@example.com",
-      "password": "cashierpass789"
-    }
-  ]
-  
+  {
+    "username": "cashier1",
+    "email": "cashier1@example.com",
+    "password": "cashierpass123"
+  },
+  {
+    "username": "cashier2",
+    "email": "cashier2@example.com",
+    "password": "cashierpass456"
+  },
+  {
+    "username": "cashier3",
+    "email": "cashier3@example.com",
+    "password": "cashierpass789"
+  },
+  {
+    "username": "cashier4",
+    "email": "cashier4@example.com",
+    "password": "cashierpass123"
+  },
+  {
+    "username": "cashier5",
+    "email": "cashier5@example.com",
+    "password": "cashierpass456"
+  },
+  {
+    "username": "cashier6",
+    "email": "cashier6@example.com",
+    "password": "cashierpass789"
+  },
+  {
+    "username": "cashier7",
+    "email": "cashier7@example.com",
+    "password": "cashierpass123"
+  },
+  {
+    "username": "cashier8",
+    "email": "cashier8@example.com",
+    "password": "cashierpass456"
+  },
+  {
+    "username": "cashier9",
+    "email": "cashier9@example.com",
+    "password": "cashierpass789"
+  },
+  {
+    "username": "cashier10",
+    "email": "cashier10@example.com",
+    "password": "cashierpass123"
+  },
+  {
+    "username": "cashier11",
+    "email": "cashier11@example.com",
+    "password": "cashierpass456"
+  },
+  {
+    "username": "cashier12",
+    "email": "cashier12@example.com",
+    "password": "cashierpass789"
+  },
+  {
+    "username": "cashier13",
+    "email": "cashier13@example.com",
+    "password": "cashierpass123"
+  },
+  {
+    "username": "cashier14",
+    "email": "cashier14@example.com",
+    "password": "cashierpass456"
+  },
+  {
+    "username": "cashier15",
+    "email": "cashier15@example.com",
+    "password": "cashierpass789"
+  },
+  {
+    "username": "cashier16",
+    "email": "cashier16@example.com",
+    "password": "cashierpass123"
+  },
+  {
+    "username": "cashier17",
+    "email": "cashier17@example.com",
+    "password": "cashierpass456"
+  },
+  {
+    "username": "cashier18",
+    "email": "cashier18@example.com",
+    "password": "cashierpass789"
+  },
+  {
+    "username": "cashier19",
+    "email": "cashier19@example.com",
+    "password": "cashierpass123"
+  },
+  {
+    "username": "cashier20",
+    "email": "cashier20@example.com",
+    "password": "cashierpass456"
+  },
+  {
+    "username": "cashier21",
+    "email": "cashier21@example.com",
+    "password": "cashierpass789"
+  },
+  {
+    "username": "cashier22",
+    "email": "cashier22@example.com",
+    "password": "cashierpass123"
+  },
+  {
+    "username": "cashier23",
+    "email": "cashier23@example.com",
+    "password": "cashierpass456"
+  },
+  {
+    "username": "cashier24",
+    "email": "cashier24@example.com",
+    "password": "cashierpass789"
+  },
+  {
+    "username": "cashier25",
+    "email": "cashier25@example.com",
+    "password": "cashierpass123"
+  },
+  {
+    "username": "cashier26",
+    "email": "cashier26@example.com",
+    "password": "cashierpass456"
+  },
+  {
+    "username": "cashier27",
+    "email": "cashier27@example.com",
+    "password": "cashierpass789"
+  },
+  {
+    "username": "cashier28",
+    "email": "cashier28@example.com",
+    "password": "cashierpass123"
+  },
+  {
+    "username": "cashier29",
+    "email": "cashier29@example.com",
+    "password": "cashierpass456"
+  },
+  {
+    "username": "cashier30",
+    "email": "cashier30@example.com",
+    "password": "cashierpass789"
+  }
+]
