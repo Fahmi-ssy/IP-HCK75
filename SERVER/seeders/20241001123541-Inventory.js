@@ -8,6 +8,7 @@ module.exports = {
       el.updatedAt = new Date()
       return el
     })
+    await queryInterface.bulkInsert('Inventories', data, {})
   },
 
   async down (queryInterface, Sequelize) {

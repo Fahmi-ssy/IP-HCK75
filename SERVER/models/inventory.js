@@ -11,14 +11,12 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Inventory.belongsTo(models.User, {
-        foreignKey: 'user_id',
-        as: 'user'
-      })
-      Inventory.hasMany(models.Cart, {
-        foreignKey: 'product_id',
-        as: 'cart'
-      })
+      // Inventory.belongsTo(models.User, {
+      //   foreignKey: 'user_id'
+      // })
+      // Inventory.hasMany(models.Cart, {
+      //   foreignKey: 'product_id'
+      // })
     }
   }
   Inventory.init({
@@ -91,6 +89,18 @@ module.exports = (sequelize, DataTypes) => {
         },
         notNull: {
           msg: 'Rating is required'
+        }
+      }
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        notEmpty: {
+          msg: 'User ID is required'
+        },
+        notNull: {
+          msg: 'User ID is required'
         }
       }
     }
