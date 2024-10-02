@@ -38,6 +38,16 @@ class CartController{
             res.status(400).json({ error: error.message });
         }
     }
+    static async deleteCartItem(req, res, next) {
+        try {
+            const cartItemId = req.params.id;
+            await Cart.destroy({ where: { id: cartItemId } });
+            res.status(204).send();
+        } catch (error) {
+            console.error(error);
+            res.status(400).json({ error: error.message });
+        }
+    }
     
 }
 
