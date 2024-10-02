@@ -1,8 +1,6 @@
 'use strict';
 const bycrypt = require('bcryptjs')
-const {
-  Model
-} = require('sequelize');
+const {  Model } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
     /**
@@ -73,6 +71,7 @@ module.exports = (sequelize, DataTypes) => {
         if (user.password) {
           const salt = bycrypt.genSaltSync(10);
           const hash = bycrypt.hashSync(user.password, salt);
+          user.password = hash;
         }
       }
     }

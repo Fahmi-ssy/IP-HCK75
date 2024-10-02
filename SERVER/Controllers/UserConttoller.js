@@ -1,11 +1,13 @@
 
-const User = require('../models')
-const {verifyPassword} = require('../helpers/bcrypt')
-const {createToken} = require('../helpers/jwt')
+const {User} = require('../models')    
+const {comparePassword} = require('../helper/bcrypt')
+const {createToken} = require('../helper/jwt')
 
 
 class UserController {
+
         static async register(req,res,next){
+            
             try {
                 const {username,email,password} = req.body
                 const user = await User.create({username : username ,email : email,password : password})
@@ -15,6 +17,7 @@ class UserController {
                 })
                 
             } catch (error) {
+                console.log("....", error);
                 res.status(500).json({
                     message: 'Internal Server Error',
                     error
@@ -43,7 +46,7 @@ class UserController {
                     })               
                     
                 }
-                const validPassword = verifyPassword(password,user.password)
+                const validPassword = comparePassword(password,user.password)
                 if (!validPassword){
                     res.status(404).json({
                         message: 'Password not found'
