@@ -9,6 +9,6 @@ routerInventory.get('/',InventoryController.getAllInventory)
 routerInventory.use(authentication)
 routerInventory.post('/',authorization,InventoryController.createInventory)
 // routerInventory.get('/:id',InventoryController.getInventoryById)
-// routerInventory.put('/:id',authorization,InventoryController.updateInventory)
+routerInventory.put('/:id',authorization,InventoryController.updateInventory)
 
 module.exports = routerInventory
