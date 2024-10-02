@@ -9,9 +9,9 @@ app.use(express.json())
 
 app.use('/', require('./routers/UserRouter'))
 app.use('/home', require('./routers/InventoryRouter'))
-module.exports = app
 
 app.listen(PORT , () => {
     console.clear()
     console.log(`Listening on port ${PORT}`)
 })
+module.exports = app

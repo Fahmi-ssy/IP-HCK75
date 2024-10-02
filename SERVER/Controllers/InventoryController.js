@@ -6,7 +6,7 @@ class InventoryController{
         try {
             
             const inventories = await Inventory.findAll()
-            console.log(inventories);
+            // console.log(inventories);
             
 
             res.status(200).json({
@@ -19,15 +19,23 @@ class InventoryController{
     }
     static async createInventory(req,res,next){
         try {
-            const {title,price,description,category,image,rating} = req.body
-            const inventory = await Inventory.create({title,price,description,category,image,rating})
+            
+            console.log(req.body);
+            
+            const {title,price,description,category,image,rating,user_id} = req.body
+            
+            const inventory = await Inventory.create({title,price,description,category,image,rating,user_id})
             res.status(201).json({
                 message: 'Success create inventory',
                 inventory
             })
+            
 
         } catch (error) {
-            next(error)
+            
+            console.log(error);
+            
+            // next(error)
         }
     }
     static async getInventoryById(req,res,next){
