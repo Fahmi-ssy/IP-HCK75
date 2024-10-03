@@ -40,6 +40,7 @@ class InventoryController{
                 totalPage: Math.ceil(counts / limit),
                 currentPage: limit
                 
+                
             });
         } catch (error) {
             next(error);
