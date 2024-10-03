@@ -1,5 +1,30 @@
+import { useState } from "react"
+import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
+
 export default function Login(){
     
+    const navigate = useNavigate()
+
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+
+    const handleLogin = async (e) => {
+        e.preventDefault()
+
+        const response = await fetch('http://localhost:3000/login',{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                email: email,
+                password: password
+            })  
+        })
+    }
+    navigate('/')
+
     return(
         <div className="font-[sans-serif]">
   <div className="grid lg:grid-cols-2 md:grid-cols-2 items-center gap-4">
@@ -10,18 +35,17 @@ export default function Login(){
         alt="login-image"
       />
     </div>
-    <form className="max-w-xl w-full p-6 mx-auto">
+    <form className="max-w-xl w-full p-6 mx-auto" onSubmit={handleLogin}>
       <div className="mb-12">
         <h3 className="text-gray-800 text-4xl font-extrabold">Sign in</h3>
         <p className="text-gray-800 text-sm mt-6">
-          Don't have an account{" "}
-          <a
-            href="javascript:void(0);"
-            className="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap"
-          >
-            Register here
-          </a>
-        </p>
+                Don't have an account{" "}
+            <Link to="/register"
+                    className="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap"
+            >
+                Register here
+            </Link>
+    </p>
       </div>
       <div>
         <label className="text-gray-800 text-sm block mb-2">Email</label>
@@ -32,6 +56,8 @@ export default function Login(){
             required=""
             className="w-full text-sm text-gray-800 border-b border-gray-300 focus:border-blue-600 px-2 py-3 outline-none"
             placeholder="Enter email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -70,6 +96,8 @@ export default function Login(){
             required=""
             className="w-full text-sm text-gray-800 border-b border-gray-300 focus:border-blue-600 px-2 py-3 outline-none"
             placeholder="Enter password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
           <svg
             xmlns="http://www.w3.org/2000/svg"

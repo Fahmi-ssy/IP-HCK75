@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
-
+import { useState } from "react"
+import { Link } from "react-router-dom"
 
 export default function Register(){
   
@@ -17,8 +18,10 @@ export default function Register(){
       email : email,
       password : password
     })
-    
-    navigate('/login')
+    if (response) {
+      
+      navigate('/login')
+    }
 
   }
 
@@ -143,12 +146,9 @@ export default function Register(){
         </button>
         <p className="text-gray-800 text-sm mt-8 text-center">
           Already have an account?{""}
-          <a
-            href="javascript:void(0);"
-            className="text-blue-500 font-semibold hover:underline ml-1"
-          >
-            Login here
-          </a>
+          <Link to="/login" className="text-blue-500 font-semibold hover:underline ml-1">
+               Login here
+          </Link>
         </p>
       </div>
     </form>
