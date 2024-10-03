@@ -5,7 +5,7 @@
         "price": 5000000,
         "description": "Elegant Seiko Presage watch with automatic movement.",
         "category": "Watches",
-        "image": "https://example.com/images/seiko_presage.jpg",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPuIMrJ_L7fSqcmunAKdrPMYiERjiH8D4GYA&s",
         "rating": 5,
         "user_id": 1
     },
@@ -14,7 +14,7 @@
         "price": 2000000,
         "description": "Durable Casio G-Shock watch with shock resistance.",
         "category": "Watches",
-        "image": "https://example.com/images/casio_gshock.jpg",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyB75mGdG5LHbn0MOtGOdHHobrLvhtGQ9v0A&s",
         "rating": 4,
         "user_id": 2
     },
@@ -23,7 +23,7 @@
         "price": 3000000,
         "description": "Citizen Eco-Drive watch powered by light.",
         "category": "Watches",
-        "image": "https://example.com/images/citizen_ecodrive.jpg",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRix7enIqocgnA_O9U6MH-MdeZtowTGJZg8hw&s",
         "rating": 5,
         "user_id": 3
     },

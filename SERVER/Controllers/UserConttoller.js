@@ -68,7 +68,7 @@ class UserController {
       const ticket = await client.verifyIdToken({
         idToken: googleToken,
         // we use our client_id from the Google console
-        audience: process.env.GOOGLE_CLIENT_ID,
+        audience: process.env.VITE_GOOGLE_CLIENT_ID,
       });
       const payload = ticket.getPayload();
       const [user, created] = await User.findOrCreate({

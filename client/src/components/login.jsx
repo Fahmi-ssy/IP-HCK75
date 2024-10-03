@@ -12,21 +12,29 @@ export default function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://localhost:3000/login", {
-      email: email,
-      password: password
-      })
-      
-      localStorage.setItem("token", response.data.data.token);    
-      
-    navigate("/");
+    try {
+        
+        const { response } = await fetch("http://localhost:3000/login", {
+          email: email,
+          password: password
+          })
+          
+          localStorage.setItem("token", response.data.data.token);    
+          
+        navigate("/");
+    } catch (error) {
+        console.log(error);
+        
+    }
 };
-useEffect(() => {
+
+
+  useEffect(() => {
     // Initialize the Google Sign-In button
     google.accounts.id.initialize({
       // to load the env in Vite project
       // please navigate to this doc -> https://vitejs.dev/guide/env-and-mode
-      client_id: import.meta.env.GOOGLE_CLIENT_ID,
+      client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID,
       // After the process is complete, the callback function will be called
       callback: async (response) => {
         console.log("Encoded JWT ID token: " + response.credential)
@@ -51,7 +59,8 @@ useEffect(() => {
     );
     // Display the One Tap dialog; comment out to remove the dialog
     google.accounts.id.prompt();
-  }, []);
+  }, []);    
+    
 
   return (
     <div className="font-[sans-serif]">
@@ -159,10 +168,22 @@ useEffect(() => {
             <p className="text-sm text-gray-800 text-center">or</p>
             <hr className="w-full border-gray-300" />
           </div>
-          <Link to="/login/google-login">
-          <div id="buttonDiv"></div>;
+          <button
+  type="button"
+  
+  className="flex items-center justify-center px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75"
+>
+  <div id="buttonDiv" className="flex items-center">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
+      alt="Google logo"
+      className="w-5 h-5 mr-2"
+    />
+    Sign in with Google
+  </div>
+</button>
           
-          </Link>
+          
         </form>
       </div>
     </div>
