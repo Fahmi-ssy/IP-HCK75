@@ -159,7 +159,10 @@ useEffect(() => {
             <p className="text-sm text-gray-800 text-center">or</p>
             <hr className="w-full border-gray-300" />
           </div>
+          <Link to="/login/google-login">
           <div id="buttonDiv"></div>;
+          
+          </Link>
         </form>
       </div>
     </div>
