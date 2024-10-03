@@ -1,17 +1,45 @@
 const {Inventory} = require("../models");
+const { Op } = require('sequelize');
 
 class InventoryController{
 
     static async getAllInventory(req, res, next) {
         try {
-            
-            const inventories = await Inventory.findAll()
+            const { filter,  sort ,page } = req.query;
+            const paramsQuerySql = {}
+            if (filter) {
+                paramsQuerySql.category = filter
+            }
+            if (sort) {
+                const ordering = sort[0] === '-' ? 'DESC' : 'ASC'
+                const columns = ordering === 'DESC' ? ['price', 'DESC'] : ['price', 'ASC']
+                paramsQuerySql.order = [[columns[0], ordering]]
+            }
+
+            let limit = 10
+            let  pageNumber =  1
+
+            if(page){
+                if(page.size){
+                    limit = +page.size
+                    paramsQuerySql.limit = limit                    
+                }
+                if(page.number){
+                    pageNumber = +page.number
+                    paramsQuerySql.offset = limit * (pageNumber - 1)
+                }
+            }
+            const { counts, rows } = await Inventory.findAndCountAll(paramsQuerySql)
             // console.log(inventories);
             
 
             res.status(200).json({
-                message: 'Success get all inventories',
-                inventories
+                message: 'Success get all inventory',
+                data: rows,
+                totalData: counts,
+                totalPage: Math.ceil(counts / limit),
+                currentPage: limit
+                
             });
         } catch (error) {
             next(error);
