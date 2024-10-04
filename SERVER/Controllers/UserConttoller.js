@@ -1,6 +1,6 @@
 const { User } = require("../models");
 const { comparePassword } = require("../helper/bcrypt");
-const { createToken } = require("../helper/jwt");
+const { createToken, verifyToken } = require("../helper/jwt");
 const { OAuth2Client } = require("google-auth-library");
 const client = new OAuth2Client();
 
@@ -70,13 +70,13 @@ class UserController {
         // we use our client_id from the Google console
         audience: process.env.VITE_GOOGLE_CLIENT_ID,
       });
-      const payload = ticket.getPayload();
+      const {email, name, picture } = ticket.getPayload();
       const [user, created] = await User.findOrCreate({
         where: { email },
         defaults: {
-          name: payload.name,
-          email: payload.email,
-          picture: payload.picture,
+          username: name,
+          email: email,
+          picture: picture,
           provider: "google",
           // We can type any password as a placeholder.
           // In future development, you should implement a feature to update the user's password.
@@ -85,7 +85,7 @@ class UserController {
         // Required to set hooks: false
         hooks: false,
       });
-      const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET);
+      const token = createToken({ id: user.id })
       // We conditionally respond with the status because the client needs to know
       // whether it is a new user or an existing user.
       res.status(created ? 201 : 200).json({ access_token: token });

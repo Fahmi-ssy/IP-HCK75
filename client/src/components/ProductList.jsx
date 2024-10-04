@@ -28,7 +28,7 @@ export default function ProductList(){
   
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
-
+  
   return (
     <div className="font-[sans-serif] p-4 mx-auto lg:max-w-5xl sm:max-w-2xl max-w-md">
       <h2 className="text-4xl font-extrabold text-gray-800 mb-12">

@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import axios from "axios";
+import { InventoryApi } from "../helper/http.client";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -21,7 +23,7 @@ export default function Login() {
           
           localStorage.setItem("token", response.data.data.token);    
           
-        navigate("/");
+        navigate("/home");
     } catch (error) {
         console.log(error);
         
@@ -41,13 +43,13 @@ export default function Login() {
   
         // Here is the logic to send the credential to the server
         // You can use axios or fetch to send the credential to the server
-        const { data } = await axios.post('http://localhost:3000/auth/google', {
+        const { data } = await InventoryApi.post('/auth/google', {
           googleToken: response.credential,
         });
         localStorage.setItem('access_token', data.access_token);
   
         // navigate to the home page or do magic stuff
-        navigate('/');
+        navigate("/");
       },
     });
   

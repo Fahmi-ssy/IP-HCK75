@@ -1,11 +1,10 @@
-
-  [
+[
     {
         "title": "Seiko Presage",
         "price": 5000000,
         "description": "Elegant Seiko Presage watch with automatic movement.",
         "category": "Watches",
-        "image": "https://www.chisholmhunter.co.uk/media/catalog/product/cache/1c13339936d9cec19ec06c7ff2acbcef/2/-/2-039-03-0134_p_1.jpg",
+        "image": "https://www.seikowatches.com/-/media/Images/Global/watch/presage/SSA409J1/SSA409J1_main.png",
         "rating": 5,
         "user_id": 1
     },
@@ -14,7 +13,7 @@
         "price": 2000000,
         "description": "Durable Casio G-Shock watch with shock resistance.",
         "category": "Watches",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyB75mGdG5LHbn0MOtGOdHHobrLvhtGQ9v0A&s",
+        "image": "https://www.casio.com/content/dam/casio/se/eur/en/watches/gshock/gshock-product/_resizeimages/GM-B2100GD-9A_1_2048x2048.jpg",
         "rating": 4,
         "user_id": 2
     },
@@ -23,7 +22,7 @@
         "price": 3000000,
         "description": "Citizen Eco-Drive watch powered by light.",
         "category": "Watches",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRix7enIqocgnA_O9U6MH-MdeZtowTGJZg8hw&s",
+        "image": "https://www.citizenwatch.com/content/dam/cw/citizen-watch-global/catalog/product/zoom/jpg/2022/CB5870-59L_1.jpg",
         "rating": 5,
         "user_id": 3
     },
@@ -32,7 +31,7 @@
         "price": 2500000,
         "description": "Classic Orient Bambino watch with leather strap.",
         "category": "Watches",
-        "image": "https://example.com/images/orient_bambino.jpg",
+        "image": "https://cdn.shopify.com/s/files/1/0017/8516/1776/products/AC00009N_3.jpg",
         "rating": 4,
         "user_id": 4
     },
@@ -41,7 +40,7 @@
         "price": 7000000,
         "description": "Sophisticated Tissot Le Locle watch with Swiss automatic movement.",
         "category": "Watches",
-        "image": "https://example.com/images/tissot_lelocle.jpg",
+        "image": "https://www.tissotwatches.com/media/catalog/product/cache/2/image/1800x/040ec09b1e35df139433887a97daa66f/T/0/T0064071603300_1.png",
         "rating": 5,
         "user_id": 5
     },
@@ -50,7 +49,7 @@
         "price": 15000000,
         "description": "Luxury Tag Heuer Carrera watch with chronograph function.",
         "category": "Watches",
-        "image": "https://example.com/images/tag_heuer_carrera.jpg",
+        "image": "https://www.tagheuer.com/on/demandware.static/-/Sites-tag-master-catalog/default/dw7737fb53/tag-heuer-carrera-CBN2A5A.FC6481-facelook.png",
         "rating": 5,
         "user_id": 6
     },
@@ -59,7 +58,7 @@
         "price": 80000000,
         "description": "Iconic Rolex Submariner watch with oystersteel case.",
         "category": "Watches",
-        "image": "https://example.com/images/rolex_submariner.jpg",
+        "image": "https://content.rolex.com/dam/2022/upright-bba-with-shadow/m126610ln-0001.png",
         "rating": 5,
         "user_id": 7
     },
@@ -68,7 +67,7 @@
         "price": 60000000,
         "description": "Professional Omega Seamaster watch with co-axial escapement.",
         "category": "Watches",
-        "image": "https://example.com/images/omega_seamaster.jpg",
+        "image": "https://www.omegawatches.com/media/catalog/product/cache/b1d94a1703b87aa3d7bc0afab15893be/3/1/31032425001001.png",
         "rating": 5,
         "user_id": 8
     },
@@ -77,7 +76,7 @@
         "price": 75000000,
         "description": "Aviation-inspired Breitling Navitimer watch with slide rule bezel.",
         "category": "Watches",
-        "image": "https://example.com/images/breitling_navitimer.jpg",
+        "image": "https://images.breitling.com/products/asset-version-2040362b40/navitimer-b01-chronograph-43-a23322121c1x1.png",
         "rating": 5,
         "user_id": 9
     },
@@ -86,7 +85,7 @@
         "price": 300000000,
         "description": "Exclusive Patek Philippe Nautilus watch with stainless steel case.",
         "category": "Watches",
-        "image": "https://example.com/images/patek_philippe_nautilus.jpg",
+        "image": "https://static.patek.com/images/articles/face_white/1600x1600/5711_1A_010_1.jpg",
         "rating": 5,
         "user_id": 10
     },
@@ -95,7 +94,7 @@
         "price": 10000000,
         "description": "Robust Hamilton Khaki Field watch with military design.",
         "category": "Watches",
-        "image": "https://example.com/images/hamilton_khaki_field.jpg",
+        "image": "https://www.hamiltonwatch.com/media/catalog/product/cache/e70a1a4b8dd1bde2ebc934d9d3dd79a0/H/7/H70595523_Front.png",
         "rating": 4,
         "user_id": 11
     },
@@ -104,7 +103,7 @@
         "price": 15000000,
         "description": "Elegant Longines Master Collection watch with moon phase.",
         "category": "Watches",
-        "image": "https://example.com/images/longines_master_collection.jpg",
+        "image": "https://cdn.longines.com/webfiles/images/watch-collection/master-collection/L2.673.4.78.3.png",
         "rating": 5,
         "user_id": 12
     },
@@ -113,7 +112,7 @@
         "price": 20000000,
         "description": "Distinctive Panerai Luminor watch with sandwich dial.",
         "category": "Watches",
-        "image": "https://example.com/images/panerai_luminor.jpg",
+        "image": "https://www.panerai.com/content/dam/cn/cate-menu/marine-luminor-watch.png",
         "rating": 5,
         "user_id": 13
     },
@@ -122,7 +121,7 @@
         "price": 25000000,
         "description": "Classic IWC Portugieser watch with chronograph function.",
         "category": "Watches",
-        "image": "https://example.com/images/iwc_portugieser.jpg",
+        "image": "https://www.iwc.com/content/dam/iwc/images/watch-collection/portugieser/iw371605_1.png",
         "rating": 5,
         "user_id": 14
     },
@@ -131,7 +130,7 @@
         "price": 30000000,
         "description": "Iconic Jaeger-LeCoultre Reverso watch with reversible case.",
         "category": "Watches",
-        "image": "https://example.com/images/jaeger_lecoultre_reverso.jpg",
+        "image": "https://www.jaeger-lecoultre.com/content/dam/rcq/jlc/25/44/79/1/2544791.png",
         "rating": 5,
         "user_id": 15
     },
@@ -140,7 +139,7 @@
         "price": 350000000,
         "description": "Luxury Audemars Piguet Royal Oak watch with octagonal bezel.",
         "category": "Watches",
-        "image": "https://example.com/images/audemars_piguet_royal_oak.jpg",
+        "image": "https://www.audemarspiguet.com/content/dam/apwatches/media/royal_oak/new_models/15500st/15500st-oo-1220st-01.png",
         "rating": 5,
         "user_id": 16
     },
@@ -149,7 +148,7 @@
         "price": 40000000,
         "description": "Bold Hublot Big Bang watch with fusion design.",
         "category": "Watches",
-        "image": "https://example.com/images/hublot_big_bang.jpg",
+        "image": "https://www.hublot.com/sites/default/files/hublot-bang_big-bang_edition-ceramic-watch.png",
         "rating": 5,
         "user_id": 17
     },
@@ -158,7 +157,7 @@
         "price": 45000000,
         "description": "Elegant Breguet Classique watch with guilloché dial.",
         "category": "Watches",
-        "image": "https://example.com/images/breguet_classique.jpg",
+        "image": "https://www.breguet.com/sites/default/files/styles/watch_full/public/watch_large/5157BB_11_9V6_fullwatch.png",
         "rating": 5,
         "user_id": 18
     },
@@ -167,7 +166,7 @@
         "price": 50000000,
         "description": "Professional Blancpain Fifty Fathoms dive watch.",
         "category": "Watches",
-        "image": "https://example.com/images/blancpain_fifty_fathoms.jpg",
+        "image": "https://www.blancpain.com/sites/default/files/styles/watch_full/public/media-gallery/images/image_50015-12b30-52_1.png",
         "rating": 5,
         "user_id": 19
     },
@@ -176,98 +175,8 @@
         "price": 55000000,
         "description": "High-precision Zenith El Primero chronograph watch.",
         "category": "Watches",
-        "image": "https://example.com/images/zenith_el_primero.jpg",
+        "image": "https://www.zenith-watches.com/sites/default/files/chronomaster_sport_front.png",
         "rating": 5,
         "user_id": 20
-    },
-    {
-        "title": "Glashütte Original Senator",
-        "price": 60000000,
-        "description": "Sophisticated Glashütte Original Senator watch.",
-        "category": "Watches",
-        "image": "https://example.com/images/glashutte_original_senator.jpg",
-        "rating": 5,
-        "user_id": 21
-    },
-    {
-        "title": "Vacheron Constantin Patrimony",
-        "price": 65000000,
-        "description": "Timeless Vacheron Constantin Patrimony watch.",
-        "category": "Watches",
-        "image": "https://example.com/images/vacheron_constantin_patrimony.jpg",
-        "rating": 5,
-        "user_id": 22
-    },
-    {
-        "title": "Chopard Mille Miglia",
-        "price": 70000000,
-        "description": "Sporty Chopard Mille Miglia watch with racing heritage.",
-        "category": "Watches",
-        "image": "https://example.com/images/chopard_mille_miglia.jpg",
-        "rating": 5,
-        "user_id": 23
-    },
-    {
-        "title": "Montblanc TimeWalker",
-        "price": 75000000,
-        "description": "Modern Montblanc TimeWalker watch with chronograph.",
-        "category": "Watches",
-        "image": "https://example.com/images/montblanc_timewalker.jpg",
-        "rating": 5,
-        "user_id": 24
-    },
-    {
-      "title": "Girard-Perregaux Laureato",
-      "price": 80000000,
-      "description": "Elegant Girard-Perregaux Laureato watch.",
-      "category": "Watches",
-      "image": "https://example.com/images/girard_perregaux_laureato.jpg",
-      "rating": 5,
-      "user_id": 25
-  },{
-    "title": "Bulgari Octo Finissimo",
-    "price": 85000000,
-    "description": "Ultra-thin Bulgari Octo Finissimo watch.",
-    "category": "Watches",
-    "image": "https://example.com/images/bulgari_octo_finissimo.jpg",
-    "rating": 5,
-    "user_id": 26
-},
-{
-    "title": "Piaget Altiplano",
-    "price": 90000000,
-    "description": "Slim Piaget Altiplano watch with minimalist design.",
-    "category": "Watches",
-    "image": "https://example.com/images/piaget_altiplano.jpg",
-    "rating": 5,
-    "user_id": 27
-},
-{
-    "title": "Richard Mille RM 11-03",
-    "price": 950000000,
-    "description": "High-tech Richard Mille RM 11-03 watch.",
-    "category": "Watches",
-    "image": "https://example.com/images/richard_mille_rm_11_03.jpg",
-    "rating": 5,
-    "user_id": 28
-},
-{
-    "title": "Ulysse Nardin Marine",
-    "price": 100000000,
-    "description": "Marine-inspired Ulysse Nardin Marine watch.",
-    "category": "Watches",
-    "image": "https://example.com/images/ulysse_nardin_marine.jpg",
-    "rating": 5,
-    "user_id": 29
-},
-{
-    "title": "A. Lange & Söhne Lange 1",
-    "price": 105000000,
-    "description": "Classic A. Lange & Söhne Lange 1 watch.",
-    "category": "Watches",
-    "image": "https://example.com/images/a_lange_sohne_lange_1.jpg",
-    "rating": 5,
-    "user_id": 30
-}
-
+    }
 ]
