@@ -47,6 +47,7 @@ export default function Login() {
         localStorage.setItem('access_token', data.access_token);
   
         // navigate to the home page or do magic stuff
+        navigate('/');
       },
     });
   
@@ -169,11 +170,9 @@ export default function Login() {
             <hr className="w-full border-gray-300" />
           </div>
           <button
-  type="button"
   
-  className="flex items-center justify-center px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75"
 >
-  <div id="buttonDiv" className="flex items-center">
+  <div id="buttonDiv" className=" grid lg:grid-cols-2 md:grid-cols-2 items-center gap-4">
     <img
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
       alt="Google logo"

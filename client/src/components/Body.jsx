@@ -5,8 +5,8 @@ export default function Body() {
     Premium Threads
   </h2>
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div className="bg-gray-50 rounded-md overflow-hidden cursor-pointer">
-      <div className="w-full overflow-hidden">
+    <div className="bg-gray-50 rounded-md  cursor-pointer">
+      <div className="w-full ">
         <img
           src="https://readymadeui.com/images/product1.webp"
           alt="Product 1"
@@ -26,8 +26,8 @@ export default function Body() {
         </button>
       </div>
     </div>
-    <div className="bg-gray-50 rounded-md overflow-hidden cursor-pointer">
-      <div className="w-full overflow-hidden">
+    <div className="bg-gray-50 rounded-md  cursor-pointer">
+      <div className="w-full ">
         <img
           src="https://readymadeui.com/images/product2.webp"
           alt="Product 2"
@@ -47,8 +47,8 @@ export default function Body() {
         </button>
       </div>
     </div>
-    <div className="bg-gray-50 rounded-md overflow-hidden cursor-pointer">
-      <div className="w-full overflow-hidden">
+    <div className="bg-gray-50 rounded-md  cursor-pointer">
+      <div className="w-full ">
         <img
           src="https://readymadeui.com/images/product3.webp"
           alt="Product 3"
@@ -68,8 +68,8 @@ export default function Body() {
         </button>
       </div>
     </div>
-    <div className="bg-gray-50 rounded-md overflow-hidden cursor-pointer">
-      <div className="w-full overflow-hidden">
+    <div className="bg-gray-50 rounded-md  cursor-pointer">
+      <div className="w-full ">
         <img
           src="https://readymadeui.com/images/product7.webp"
           alt="Product 3"
@@ -89,8 +89,8 @@ export default function Body() {
         </button>
       </div>
     </div>
-    <div className="bg-gray-50 rounded-md overflow-hidden cursor-pointer">
-      <div className="w-full overflow-hidden">
+    <div className="bg-gray-50 rounded-md  cursor-pointer">
+      <div className="w-full ">
         <img
           src="https://readymadeui.com/images/product5.webp"
           alt="Product 3"
@@ -110,8 +110,8 @@ export default function Body() {
         </button>
       </div>
     </div>
-    <div className="bg-gray-50 rounded-md overflow-hidden cursor-pointer">
-      <div className="w-full overflow-hidden">
+    <div className="bg-gray-50 rounded-md  cursor-pointer">
+      <div className="w-full ">
         <img
           src="https://readymadeui.com/images/product6.webp"
           alt="Product 3"

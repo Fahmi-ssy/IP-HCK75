@@ -11,6 +11,7 @@ app.use(express.json())
 app.use('/', require('./routers/UserRouter'))
 app.use('/home', require('./routers/InventoryRouter'))
 app.use('/cart', require('./routers/CartRouter'))
+app.use('/gemini', require('./routers/GeminiRouter'))
 
 
 app.listen(PORT , () => {

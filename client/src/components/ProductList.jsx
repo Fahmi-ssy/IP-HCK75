@@ -13,8 +13,8 @@ export default function ProductList(){
     const fetchProduct = async () => {
       try {
         const response = await axios.get('http://localhost:3000/home');
-        console.log(response.data); // Log the response to check its structure
-        setProducts(response.data.data); // Adjust based on your API response structure
+        // console.log(response.data); // Log the response to check its structure
+        setProducts(response.data.data)
         setLoading(false);
       } catch (err) {
         setError(err.message);
@@ -37,18 +37,18 @@ export default function ProductList(){
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {products && products.map((product) => (
 
-          <div key={product.id} className="bg-gray-50 rounded-md overflow-hidden cursor-pointer">
-            <div className="w-full overflow-hidden">
+          <div key={product.id} className="bg-gray-50 rounded-md  cursor-pointer">
+            <div className="w-full ">
               <img
-                src={products.image}
-                alt={products.title}
+                src={product.image}
+                alt={product.title}
                 className="h-full w-full object-cover object-top hover:scale-110 transition-all"
               />
             </div>
             <div className="p-6">
               <div className="mb-6 flex items-center justify-center flex-wrap gap-4">
-                <h3 className="text-lg font-bold text-gray-800">{products.title}</h3>
-                <p className="text-lg text-blue-600 font-bold">${products.price}</p>
+                <h3 className="text-lg font-bold text-gray-800">{product.title}</h3>
+                <p className="text-lg text-blue-600 font-bold">${product.price}</p>
               </div>
               <button
                 type="button"
