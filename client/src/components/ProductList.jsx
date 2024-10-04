@@ -38,7 +38,7 @@ export default function ProductList(){
         {products && products.map((product) => (
 
           <div key={product.id} className="bg-gray-50 rounded-md  cursor-pointer">
-            <div className="w-full ">
+            <div className="w-full h-96 ">
               <img
                 src={product.image}
                 alt={product.title}
