@@ -19,5 +19,3 @@ npx sequelize model:generate --name Transaction_id --attributes transaction_id:i
 npx sequelize model:generate --name Cart --attributes user_id:integer,product_id:integer,quantity:integer,total_price:integer
 
 
-CLient ID : 455404420351-tmri3mh2q00hm2iipvjovc5nh84ldrc9.apps.googleusercontent.com
-Client Secret ID : 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
