@@ -1,0 +1,182 @@
+[
+    {
+        "title": "Seiko Presage",
+        "price": 5000000,
+        "description": "Elegant Seiko Presage watch with automatic movement.",
+        "category": "Watches",
+        "image": "https://www.seikowatches.com/-/media/Images/Global/watch/presage/SSA409J1/SSA409J1_main.png",
+        "rating": 5,
+        "user_id": 1
+    },
+    {
+        "title": "Casio G-Shock",
+        "price": 2000000,
+        "description": "Durable Casio G-Shock watch with shock resistance.",
+        "category": "Watches",
+        "image": "https://www.casio.com/content/dam/casio/se/eur/en/watches/gshock/gshock-product/_resizeimages/GM-B2100GD-9A_1_2048x2048.jpg",
+        "rating": 4,
+        "user_id": 2
+    },
+    {
+        "title": "Citizen Eco-Drive",
+        "price": 3000000,
+        "description": "Citizen Eco-Drive watch powered by light.",
+        "category": "Watches",
+        "image": "https://www.citizenwatch.com/content/dam/cw/citizen-watch-global/catalog/product/zoom/jpg/2022/CB5870-59L_1.jpg",
+        "rating": 5,
+        "user_id": 3
+    },
+    {
+        "title": "Orient Bambino",
+        "price": 2500000,
+        "description": "Classic Orient Bambino watch with leather strap.",
+        "category": "Watches",
+        "image": "https://cdn.shopify.com/s/files/1/0017/8516/1776/products/AC00009N_3.jpg",
+        "rating": 4,
+        "user_id": 4
+    },
+    {
+        "title": "Tissot Le Locle",
+        "price": 7000000,
+        "description": "Sophisticated Tissot Le Locle watch with Swiss automatic movement.",
+        "category": "Watches",
+        "image": "https://www.tissotwatches.com/media/catalog/product/cache/2/image/1800x/040ec09b1e35df139433887a97daa66f/T/0/T0064071603300_1.png",
+        "rating": 5,
+        "user_id": 5
+    },
+    {
+        "title": "Tag Heuer Carrera",
+        "price": 15000000,
+        "description": "Luxury Tag Heuer Carrera watch with chronograph function.",
+        "category": "Watches",
+        "image": "https://www.tagheuer.com/on/demandware.static/-/Sites-tag-master-catalog/default/dw7737fb53/tag-heuer-carrera-CBN2A5A.FC6481-facelook.png",
+        "rating": 5,
+        "user_id": 6
+    },
+    {
+        "title": "Rolex Submariner",
+        "price": 80000000,
+        "description": "Iconic Rolex Submariner watch with oystersteel case.",
+        "category": "Watches",
+        "image": "https://content.rolex.com/dam/2022/upright-bba-with-shadow/m126610ln-0001.png",
+        "rating": 5,
+        "user_id": 7
+    },
+    {
+        "title": "Omega Seamaster",
+        "price": 60000000,
+        "description": "Professional Omega Seamaster watch with co-axial escapement.",
+        "category": "Watches",
+        "image": "https://www.omegawatches.com/media/catalog/product/cache/b1d94a1703b87aa3d7bc0afab15893be/3/1/31032425001001.png",
+        "rating": 5,
+        "user_id": 8
+    },
+    {
+        "title": "Breitling Navitimer",
+        "price": 75000000,
+        "description": "Aviation-inspired Breitling Navitimer watch with slide rule bezel.",
+        "category": "Watches",
+        "image": "https://images.breitling.com/products/asset-version-2040362b40/navitimer-b01-chronograph-43-a23322121c1x1.png",
+        "rating": 5,
+        "user_id": 9
+    },
+    {
+        "title": "Patek Philippe Nautilus",
+        "price": 300000000,
+        "description": "Exclusive Patek Philippe Nautilus watch with stainless steel case.",
+        "category": "Watches",
+        "image": "https://static.patek.com/images/articles/face_white/1600x1600/5711_1A_010_1.jpg",
+        "rating": 5,
+        "user_id": 10
+    },
+    {
+        "title": "Hamilton Khaki Field",
+        "price": 10000000,
+        "description": "Robust Hamilton Khaki Field watch with military design.",
+        "category": "Watches",
+        "image": "https://www.hamiltonwatch.com/media/catalog/product/cache/e70a1a4b8dd1bde2ebc934d9d3dd79a0/H/7/H70595523_Front.png",
+        "rating": 4,
+        "user_id": 11
+    },
+    {
+        "title": "Longines Master Collection",
+        "price": 15000000,
+        "description": "Elegant Longines Master Collection watch with moon phase.",
+        "category": "Watches",
+        "image": "https://cdn.longines.com/webfiles/images/watch-collection/master-collection/L2.673.4.78.3.png",
+        "rating": 5,
+        "user_id": 12
+    },
+    {
+        "title": "Panerai Luminor",
+        "price": 20000000,
+        "description": "Distinctive Panerai Luminor watch with sandwich dial.",
+        "category": "Watches",
+        "image": "https://www.panerai.com/content/dam/cn/cate-menu/marine-luminor-watch.png",
+        "rating": 5,
+        "user_id": 13
+    },
+    {
+        "title": "IWC Portugieser",
+        "price": 25000000,
+        "description": "Classic IWC Portugieser watch with chronograph function.",
+        "category": "Watches",
+        "image": "https://www.iwc.com/content/dam/iwc/images/watch-collection/portugieser/iw371605_1.png",
+        "rating": 5,
+        "user_id": 14
+    },
+    {
+        "title": "Jaeger-LeCoultre Reverso",
+        "price": 30000000,
+        "description": "Iconic Jaeger-LeCoultre Reverso watch with reversible case.",
+        "category": "Watches",
+        "image": "https://www.jaeger-lecoultre.com/content/dam/rcq/jlc/25/44/79/1/2544791.png",
+        "rating": 5,
+        "user_id": 15
+    },
+    {
+        "title": "Audemars Piguet Royal Oak",
+        "price": 350000000,
+        "description": "Luxury Audemars Piguet Royal Oak watch with octagonal bezel.",
+        "category": "Watches",
+        "image": "https://www.audemarspiguet.com/content/dam/apwatches/media/royal_oak/new_models/15500st/15500st-oo-1220st-01.png",
+        "rating": 5,
+        "user_id": 16
+    },
+    {
+        "title": "Hublot Big Bang",
+        "price": 40000000,
+        "description": "Bold Hublot Big Bang watch with fusion design.",
+        "category": "Watches",
+        "image": "https://www.hublot.com/sites/default/files/hublot-bang_big-bang_edition-ceramic-watch.png",
+        "rating": 5,
+        "user_id": 17
+    },
+    {
+        "title": "Breguet Classique",
+        "price": 45000000,
+        "description": "Elegant Breguet Classique watch with guilloché dial.",
+        "category": "Watches",
+        "image": "https://www.breguet.com/sites/default/files/styles/watch_full/public/watch_large/5157BB_11_9V6_fullwatch.png",
+        "rating": 5,
+        "user_id": 18
+    },
+    {
+        "title": "Blancpain Fifty Fathoms",
+        "price": 50000000,
+        "description": "Professional Blancpain Fifty Fathoms dive watch.",
+        "category": "Watches",
+        "image": "https://www.blancpain.com/sites/default/files/styles/watch_full/public/media-gallery/images/image_50015-12b30-52_1.png",
+        "rating": 5,
+        "user_id": 19
+    },
+    {
+        "title": "Zenith El Primero",
+        "price": 55000000,
+        "description": "High-precision Zenith El Primero chronograph watch.",
+        "category": "Watches",
+        "image": "https://www.zenith-watches.com/sites/default/files/chronomaster_sport_front.png",
+        "rating": 5,
+        "user_id": 20
+    }
+]

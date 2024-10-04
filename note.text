@@ -1,0 +1,21 @@
+Penjelasan:
+
+One-to-Many:
+
+- Sebuah role dapat ditetapkan ke banyak user (ditunjukkan dengan panah dari peran ke pengguna).
+- Seorang user dapat melakukan banyak transaksi (ditunjukkan dengan tanda panah dari pengguna ke transaksi).
+- Sebuah buku dapat terlibat dalam banyak transaksi (ditunjukkan dengan tanda panah dari buku ke transaksi).
+
+One-to-One:
+
+Setiap transaksi diidentifikasi secara unik berdasarkan idnya dan menghubungkan user tertentu ke buku tertentu.
+
+npx sequelize model:generate --name profile_cashier --attributes name:string,time:string,cashier_id:integer
+
+npx sequelize model:generate --name User --attributes username:string,email:string,password:string
+npx sequelize model:generate --name Inventory --attributes title:string,price:integer,description:string,category:string,image:string,rating:integer
+npx sequelize model:generate --name Transaction --attributes user_id:integer,product_id:integer,quantity:integer,total_price:integer,status:string
+npx sequelize model:generate --name Transaction_id --attributes transaction_id:integer,product_id:integer
+npx sequelize model:generate --name Cart --attributes user_id:integer,product_id:integer,quantity:integer,total_price:integer
+
+
