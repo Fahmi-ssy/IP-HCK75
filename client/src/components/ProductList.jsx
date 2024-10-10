@@ -12,8 +12,7 @@ export default function ProductList(){
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/home');
-        // console.log(response.data); // Log the response to check its structure
+        const response = await axios.get('http://localhost:3000/home');        
         setProducts(response.data.data)
         setLoading(false);
       } catch (err) {
@@ -24,7 +23,7 @@ export default function ProductList(){
 
     fetchProduct();
   }, []);
-  console.log(products ,"------------------");
+  
   
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;

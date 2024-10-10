@@ -15,6 +15,6 @@ class GeminiController {
         }
     }
 }
-module.exports = GeminiController;
+module.exports = GeminiController
 
 // console.log(result.response.text());
