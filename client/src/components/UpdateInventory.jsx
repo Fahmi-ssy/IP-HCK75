@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { InventoryApi } from "../helper/http.client";
 
 export default function UpdateInventory({ inventoryId }) {
   const navigate = useNavigate();
@@ -24,12 +25,12 @@ export default function UpdateInventory({ inventoryId }) {
     };
 
     try {
-      const response = await fetch(`http://localhost:3000/inventory/:id`, {
-        method: "PUT",
+      const response = await InventoryApi.put(`/home/:id`, {inventoryData},{
+        
         headers: {
-          "Content-Type": "application/json",
+          Authorization: `Bearer ${localStorage.getItem("access_token")}`,
         },
-        body: JSON.stringify(inventoryData),
+        
       });
 
       if (!response.ok) {
