@@ -1,5 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 import { InventoryApi } from "../helper/http.client";
 
 export default function ProductList() {
@@ -23,17 +25,58 @@ export default function ProductList() {
   }, []);
 
   const handleDelete = async (id) => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "Do you want to delete this product? This action cannot be undone!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#d33",
+      cancelButtonColor: "#3085d6",
+      confirmButtonText: "Yes, delete it!",
+      cancelButtonText: "Cancel",
+    }).then(async (result) => {
+      if (result.isConfirmed) {
+        try {
+          await InventoryApi.delete(`/home/${id}`, {
+            headers: {
+              Authorization: `Bearer ${localStorage.getItem("access_token")}`,
+            },
+          });
+
+          setProducts(products.filter((product) => product.id !== id));
+
+          Swal.fire("Deleted!", "The product has been deleted.", "success");
+        } catch (err) {
+          console.error("Failed to delete product:", err.message);
+          Swal.fire("Error", "Failed to delete the product. Please try again.", "error");
+        }
+      }
+    });
+  };
+
+  const handleGemini = async (id) => {
     try {
-      
-      await InventoryApi.delete(`/home/${id}`, {
+      const { data } = await InventoryApi({
+        url: `http://localhost:3000/home/history`,
+        method: "POST",
+        data: { title: products.find((product) => product.id === id).title },
         headers: {
-          Authorization: `Bearer ${localStorage.getItem("access_token")}`, 
+          Authorization: `Bearer ${localStorage.getItem("access_token")}`,
         },
       });
-      
-      setProducts(products.filter((product) => product.id !== id));
-    } catch (err) {
-      console.error("Failed to delete product:", err.message);
+
+      // Display the summary in a SweetAlert2 dialog
+      Swal.fire({
+        title: "Product Summary",
+        html: `<div style="text-align: left; max-height: 300px; overflow-y: auto;">
+                <p>${data.summary}</p>
+               </div>`,
+        icon: "info",
+        confirmButtonText: "Close",
+      });
+    } catch (error) {
+      console.error("Failed to fetch summary:", error);
+      Swal.fire("Error", "Failed to fetch the summary. Please try again.", "error");
     }
   };
 
@@ -62,18 +105,25 @@ export default function ProductList() {
                   <p className="text-lg text-blue-600 font-bold">${product.price}</p>
                 </div>
                 <div className="flex justify-between">
-                  <button
-                    type="button"
-                    className="w-full mr-2 px-5 py-2.5 bg-blue-600 hover:bg-blue-700 font-bold text-white rounded-lg"
+                  <Link
+                    to={`/update/${product.id}`} 
+                    className="w-full mr-2 px-5 py-2.5 bg-blue-600 hover:bg-blue-700 font-bold text-white rounded-lg text-center"
                   >
-                    Add to cart
-                  </button>
+                    Edit
+                  </Link>
                   <button
                     type="button"
                     onClick={() => handleDelete(product.id)}
-                    className="w-full px-5 py-2.5 bg-red-600 hover:bg-red-700 font-bold text-white rounded-lg"
+                    className="w-full mr-2 px-5 py-2.5 bg-red-600 hover:bg-red-700 font-bold text-white rounded-lg"
                   >
                     Delete
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => handleGemini(product.id)}
+                    className="w-full px-5 py-2.5 bg-green-600 hover:bg-green-700 font-bold text-white rounded-lg"
+                  >
+                    Gemini
                   </button>
                 </div>
               </div>

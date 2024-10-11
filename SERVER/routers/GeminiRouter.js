@@ -1,8 +1,8 @@
 const express = require('express')
-const GeminiController = require('../Controllers/GeminiControlles')
+const GeminiController = require('../helper/gemini')
 
 const GeminiRouter = express.Router()
 
-GeminiRouter.get('/', GeminiController.gemini)
+// GeminiRouter.get('/', GeminiController.gemini)
 
 module.exports = GeminiRouter

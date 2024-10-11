@@ -1,11 +1,10 @@
-import { useState } from "react";
-import { useEffect } from "react";
-
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   const [user, setUser] = useState(null);
 
-  useEffect(() => {    
+  useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem('user'));
     setUser(storedUser);
   }, []);
@@ -22,9 +21,21 @@ export default function Sidebar() {
         </div>
       </div>
       <hr className="mt-6 border-gray-600" />
+      <div className="flex flex-col mt-4 space-y-4">
+        <Link 
+          to="/create" 
+          className="text-white text-base hover:text-blue-400 transition-colors"
+        >
+          Create Inventory
+        </Link>
+        <Link 
+          to="/update" 
+          className="text-white text-base hover:text-blue-400 transition-colors"
+        >
+          Update Inventory
+        </Link>
+      </div>
       <hr className="my-8 border-gray-600" />
     </nav>
   );
 }
-
-
