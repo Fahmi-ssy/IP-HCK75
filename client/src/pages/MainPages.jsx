@@ -1,8 +1,10 @@
-import Cart from "../components/Cart";
-import Gemini from "../components/Gemini";
+
+import GeminiChatbox from "../components/Gemini";
+
 import Navbar from "../components/Navbar";
 import ProductList from "../components/ProductList";
-import UserSidebar from "../components/UserSideBat";
+import Sidebar from "../components/SideBar";
+
 
 export default function MainPages() {
   
@@ -15,7 +17,7 @@ export default function MainPages() {
                 {/* Main content with sidebar, page content, and cart */}
                 <div className="flex flex-row h-full">
                     {/* Sidebar Section (on the left) */}
-                    <UserSidebar className="h-full" />
+                    <Sidebar className="h-full" />
                     
 
                     {/* Main Content */}
@@ -30,7 +32,7 @@ export default function MainPages() {
                     {/* Cart Section (on the right) */}
                     <div >
                         {/* Your Cart component goes here */}
-                        <Cart />
+                        <GeminiChatbox />
                     </div>
                 </div>
             </div>

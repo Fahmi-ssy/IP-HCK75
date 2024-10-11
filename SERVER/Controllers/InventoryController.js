@@ -1,5 +1,6 @@
 const {Inventory} = require("../models");
 const { Op } = require('sequelize');
+const gemini = require('../helper/gemini')
 
 class InventoryController{
 
@@ -64,7 +65,7 @@ class InventoryController{
             
             console.log(error);
             
-            // next(error)
+            
         }
     }
     static async getInventoryById(req,res,next){
@@ -107,6 +108,15 @@ class InventoryController{
                 message: 'Success delete inventory',
                 inventory
             })
+        } catch (error) {
+            next(error)
+        }
+    }
+    static async history(req,res,next){
+        try {
+            const {title} = req.body
+            let result = await gemini(title)
+            res.json(result)
         } catch (error) {
             next(error)
         }

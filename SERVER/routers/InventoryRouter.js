@@ -9,6 +9,7 @@ routerInventory.get('/',InventoryController.getAllInventory)
 routerInventory.use(authentication)
 routerInventory.post('/',authorization,InventoryController.createInventory)
 // routerInventory.get('/:id',InventoryController.getInventoryById)
+routerInventory.post('/history', InventoryController.history)
 routerInventory.put('/:id',authorization,InventoryController.updateInventory)
 routerInventory.delete('/:id',authorization,InventoryController.deleteInventory)
 
