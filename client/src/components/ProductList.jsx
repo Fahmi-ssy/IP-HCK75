@@ -65,7 +65,7 @@ export default function ProductList() {
         },
       });
 
-      // Display the summary in a SweetAlert2 dialog
+      
       Swal.fire({
         title: "Product Summary",
         html: `<div style="text-align: left; max-height: 300px; overflow-y: auto;">
